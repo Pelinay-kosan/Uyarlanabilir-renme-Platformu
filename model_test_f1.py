@@ -79,7 +79,6 @@ def test_et():
     for i, row in zip(labels, cm):
         print(f" Gerçek {i} | " + " ".join(map(str, row)))
 
-    # --- BURAYA YAPIŞTIR (Hizaya Dikkat!) ---
     plt.figure(figsize=(10, 7))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
                 xticklabels=target_names, yticklabels=target_names)
